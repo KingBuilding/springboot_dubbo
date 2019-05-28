@@ -8,10 +8,11 @@ import org.apache.rocketmq.spring.core.RocketMQTemplate;
  * Author: 金🗡
  * Date: 2019/5/23 0:36
  */
-@Service(version ="1.0.0")
+@Service(version ="1.0.0",dynamic = true)
 public class MyFirstImpl implements MyFirst {
 
     RocketMQTemplate rocketMQTemplate;
+
     @Override
     public String first() {
 
